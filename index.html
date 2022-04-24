@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>기억주스</title>
+</head>
+<style type="text/css">
+		@font-face {
+    		font-family: 'GmarketSansLight';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');font-weight: normal;font-style: normal;}
+		@font-face {
+    		font-family: 'GmarketSansBold';
+    		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    		font-weight: normal;
+   	 		font-style: normal;}
+   	 	@font-face {
+    		font-family: 'GmarketSansMedium';
+    		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    		font-weight: normal;
+    		font-style: normal;}  
+    	h5.test2 {writing-mode: vertical-rl;}
+
+hr.solid {border-top: 3px solid #114df7;}
+
+a {display: inline-block; background: none; width: 100px; height: 50px; margin: 10px;
+		/*마진을 여기서 clear 로 하면 바로 옆으로 딱딱붙 */text-align: center; line-height: 50px;
+			text-decoration: none; font-weight: bold;
+			border-radius: 5px; /*border: 2px solid darkgrey;*/
+			box-shadow: 0px 0px 3px gray; color: darkslategray;}
+			a:hover{background: #f20cac; box-shadow: none; color: white; transition: all 0.5s;}
+
+    	
+	body{margin:0; margin: auto; background: black;}
+
+   
+	section {background-color: black; margin-bottom: 300px;}	
+	h2{border: solid #114df7 2px; font-family:'GmarketSansBold'; padding: 30px; text-align: center; background:black; color: #114df7; font-size: 40px; width: 400px; margin: auto; margin-top: 100px; margin-bottom: 80px;}
+	h3 { margin: 0; width: 400px ;color:  #114df7;font-family: GmarketSansbold; font-size: 80px; text-align: right; line-height: 1.2;}
+	h4{font-family:'GmarketSansBold'; text-align: center; color: #114df7; font-size: 50px;  margin: auto;}
+	h5{font-family:'GmarketSansBold'; text-align: right; color: #114df7; font-size: 70px;  margin-right: 50px; margin-top: 0; margin-bottom: 0;}
+	h6{font-family:'GmarketSansBold'; text-align: center; color: #114df7; font-size: 70px; margin: 0;}
+	.border{border: solid #114df7 0px;font-family:'GmarketSansBold'; padding: 30px; text-align: center; background:#114df7; color: black; font-size: 40px; margin: auto; margin-top: 100px; margin-bottom: 80px; width: 100%;}
+
+
+	.row2{width:1300px; display:flex; padding:30px 0px; margin: auto;}
+	.row3{display: flex; }
+
+
+    	.col-1{ width: 600px ;color:  #114df7;font-family: GmarketSansbold; margin:0 ; padding: 50px; padding-top: 110px; padding-left: 90px; font-size: 40px;}
+    	.col-2{ width: 600px ;color:  #114df7;font-family: GmarketSansMedium; margin:0 ; padding-left: 90px; font-size: 15px;}
+    	.col-3{margin: 0px 20px; width: 600px; color:#114df7; font-family: 'GmarketSansMedium'; text-align: center;  line-height: 2.5; letter-spacing: -1px; margin: auto; font-size: 20px;}
+    	 .col-4{color:  #114df7;font-family: GmarketSansbold; margin: auto; padding: 100px; font-size: 25px; margin-bottom: auto; text-align: center;}
+    	 .col-5{margin: 0px 20px; width: 1000px; color:#114df7; font-family: 'GmarketSansMedium'; text-align: center;  line-height: 2.5; letter-spacing: -1px; text-align: left; padding: 20px; padding-left: 60px; font-size: 20px;}
+    	 .col-f{color:#114df7; font-family: 'GmarketSansMedium'; text-align: center; letter-spacing: -1px; margin: 30px;}
+    	 .col-c{margin: 0px 20px; width: 1000px; color:#114df7; font-family: 'GmarketSansMedium'; text-align: center;  line-height: 2.5; letter-spacing: -1px; margin: auto; font-size: 20px;}
+    	.row{height: 300px; margin: auto; display: flex; padding: 0px px; margin-bottom: 20px;}
+    	.s-1{background: url('redsun.gif'); background-size: cover; height: 500px; margin-bottom: 100px;}
+    	.tcenter {text-align: center;}
+
+    	.bg-bzz {background: url('bzz.jpg'); background-size: 100% auto; background-position: 50px -50px; background-attachment: fixed;}
+    	.col-6 {width: 590px; margin: 0px 0px;}
+    	.bg-none{background: none;}
+    	.flex{display: flex;}
+		.c2{width: 50%;margin:2%; width: 600px;}
+		.c3{width: 600px; height: 600px;}
+		.c4{width: 600px;}
+		.layersize{width: 600px;}
+		.nomargin{margin-bottom: 50px;}
+		.bg-bzz2 {background: url(bzz2.jpg); background-size: cover; height: 5500px;}
+		.exp1{ font-family:GmarketSansMedium; width:500px;  margin: o; color: #114df7; font-size: 20px; }
+		.j1size{width: 577px; margin-left: 150px;}
+		.j2size{width: 200px; position: relative; left: 1050px;}
+		.j3size{width: 796px; display: block; margin-left: auto; margin-right: auto;}
+		.bg-sea {background-image: url(sea.gif); background-size: cover; height: 675px;}
+		.bg-layer {background-image: url(layerback.png); background-size: cover; height: 1200px;}
+		.spad{margin-bottom: 120px;}
+		.toppad{margin-top: 120px;}
+		.toppad2{margin-top: 300px;}
+		.toppad3{margin-top: 500px;}
+		.textpadding{padding: 50px;}
+		.exp3 {margin: 0px 20px; width: 600px; color:#114df7; font-family: 'GmarketSansMedium'; text-align: center;  line-height: 1.8; letter-spacing: -1px; margin: auto; font-size: 20px;}
+		.dark{color: white; font-family: GmarketSansLight; margin:0 ; padding-left: 90px; font-size: 13px;
+			text-align: center; padding: 70px;}
+		.candysize{width: 870px; display: block; margin-left: auto; margin-right: auto;}
+		.hsize{width: 100%; margin: auto;}
+		.container{width: 375px; height: 67px; background: black; justify-content: center; align-items: center; display: flex; margin: auto;}
+		.cont1{width: 500px; height: 160px; justify-content: flex-end; }
+		.cont2{width: 600px; height: 776px;}
+		.sb{justify-content: flex-end;}
+		.note{margin-top: 175px; margin-bottom: 148px;}
+		.sp1{color:  #114df7;font-family: GmarketSansbold; margin:0 ; font-size: 60px; text-align: right; position: absolute; right: 50px; }
+		.sp2{color:  #114df7;font-family: GmarketSansbold; margin:0 ; padding: 50px; padding-top: 110px; padding-left: 90px; font-size: 60px; text-align: left; position: relative;
+			left: 50px; top: 1500px}
+		.sp3{color:  #114df7;font-family: GmarketSansbold; margin:0 ; padding: 50px; padding-top: 110px; padding-left: 90px; font-size: 60px; text-align: center; position: relative; top: 3750px}
+		.gjtbox{position: relative; left: 250px;
+			top: 300px;}
+		.hjtbox{position: relative; right: 700px; top: 400px;}
+		.hj{position: relative; left: 240px;}
+		.emr{position: relative; left: 460px;}
+		.biggertext {font-size: 80px;}
+		.thbg {background-image: url(thbzz.png); background-size: 100%; height: 600px;}
+		.rv {width: 290px; margin: 0px 5px; margin-top: 70px;}
+		.rvsize{width: 270px;}
+
+
+		.zoom { transition: transform .2s; margin: 0 auto;}
+        .zoom:hover {transform: scale(1.4);}
+
+        .zoom2 { transition: transform .2s; margin: 0 auto;}
+        .zoom2:hover {transform: scale(1.4);}
+		
+
+    	
+
+    </style>
+<body>
+	<header>
+	<img src="header.jpg" class="hsize">
+	</header>
+	<section class="s-1">
+	<p class="col-1"> 사실 귀하는 제작년 이맘때,<br>
+		저희 회사의 기억 적출 서비스를<br>받으셨습니다.</p>
+	<p class="col-2"> 기억이 안 나신다고요? 저희 서비스가 완벽했군요!</p>
+	</section>
+	<div class="toppad2">
+	<h2>하지만...</h2>
+	<p class="col-3"> 좋든 나쁘든 한 사람을 이루는 근간인 기억들이 회사 창고에서 썩다니...<br>너무나 안타까운 현실입니다.<br> 창고를 스튜디오로 쓰고싶은데 자리가 없기도 하고요.<br>그래서 준비한 점포정리!
+	</p>
+	<p class="col-4">"잊었던 기억을 맛보고 싶지 않으신가요?"</p>
+	</div>
+	</section>
+	<section class="toppad2">
+	<header class="bg-bzz">
+		<div class="row sb">
+			<div class="bg-none cont1">
+					<div><h3> 그렇다면<br> 기억 주스!</h3></div>
+				</div>
+			</div>
+		</div>
+		</header>
+		<p class="col-5">단순히 마시는 것 만으로 쓰레기처럼 팽개친 기억들이 돌아온다!<br>향긋한 기억, 쌉싸름한 기억, 매운 기억을 레이어링 옵션에 따라 순차적으로 맛볼 수 있습니다.<br>
+기억뿐만 아니라 맛, 심미성까지 챙긴 각양각색의 코스를 지금 바로 만나보세요 </p>
+</section>
+<section class="nomargin">
+ <h4>기억 주스만의 레이어링 공정!</h4>
+ <p class="col-3 tcenter">목넘김의 횟수에 따라 돌아오는 기억에 순서를 부여했습니다.</p>
+
+</section>
+
+
+<section class="flex bg-layer">
+	<div class="c2">
+		
+		</div>
+		<div class="cont2">
+			<div class="note">
+			<h4 class="col3">
+				TOP. 첫번째 기억</h4>
+		    </div>
+
+		    <div class="note">
+			<h4 class="col3">
+				MIDDLE. 두번째 기억</h4>
+		    </div>
+
+		    <div class="note">
+			<h4 class="col3">
+				BASE. 세번째 기억</h4>
+			</div>
+
+		</div>
+		
+	</section>
+	<section class="bg-bzz2">
+		<div > 
+			<div>
+			<div class="sp1">
+			<p style="margin-top: 620px" > 옵션에 따라서 서서히 번져오는<br>기쁨을 느낄 수도 </p>
+		</div>
+	</div>
+
+		<div class="sp2">
+			<p style="margin-top: 550px">저 깊은 밑바닥을<br>탐험해 볼 수도  </p>
+			
+		</div>
+		<div class="sp3"> 
+			<p>혹은 그저 행복만 할 수도 있겠죠? </p>
+		<div class="col-3"> <p>원하는 순서를 선택해서 기억 여행을 떠나봅시다!</p></div></div>
+		
+	</div>
+
+
+		
+	</section>
+	<section class="spad">
+		<div>
+		<h2 class="border">어떤 순서로 마셔볼까요?</h2>
+		</div>
+
+		<div class="flex" >
+	<div class="c3"><img src="j1.gif" class="j1size">
+		</div>
+		<div class="c4 gjtbox">
+			<h5 class= "biggertext">
+				고진감래
+			</h5>
+			<br>
+			<br>
+			<br>
+			<div class="exp1" ><p>영화는 무조건 해피엔딩, 급식때부터 맛있는 건  꼭 마지막까지 남겨두시던 분들을 위해 준비했습니다!<br>쓴 기억 먼저, 좋은 기억 나중에. 고생 끝에 오는 달콤함이야말로 모두가 꿈꾸는 가장 이상적인 여행의 순서라고 할 수 있겠죠.<br>마시면 마실수록 행복해지는 고진감래 타입입니다.</p></div>
+				</div></div>
+		
+	</section>
+
+
+
+	<section class="bg-sea toppad3">
+	<div class= "flex">
+
+		<div class="c3"><img src="j2.png" class="j2size"></div>
+		<div>
+		<h5 class="test2 biggertext hj">해저</h5>
+		<h5 class="test2 biggertext emr">이만리</h5></div>
+        <div class="exp1 hjtbox" ><p>한 모금 두 모금 넘길 때마다 심연 저 끝으로 사색해보는<br> 모험가들을 위한 타입.
+        인생이 너무 잘 풀려서 자극이 없으신가요? 머릿속이 너무나 꽃밭이신가요?<br>해저 2만리에 도전해보세요!<br>자신의 추악한 면까지 오롯하게 마주하는 당신이 이 시대의 진정한 모험가입니다.</p></div>
+        
+    </div>
+
+
+
+	</section>
+
+<section class="spad" id="1">
+	<img src="j3.gif" class="j3size">
+	<h6 class="textpadding">눈막귀막</h6>
+	<p class="exp3">몰라몰라~ 좋은것만 보고 듣고 그저 행복할래.<br>
+소설에서 오해 갈등 부분은 후루룩 넘겨버리는 분들은  여기로 모이세요!<br>자랑스런 저희의 베스트 상품으로 극강의 도파민을 느껴보세요</p>
+<p class="dark">다음은 어둠에 다크에 고객님들께만 보이는 버튼입니다</p>
+<div class="container">
+	<div>
+<p1>
+	<a href="index11.html" target="_new">VIP ONLY</a> 
+</p1></div>
+</div>
+
+	</section>
+
+
+<section class="toppad2">
+	<h4>"아...괜히 봤다"</h4>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div>
+		<p class="col-3">막상 마시고나니 기억을 버린 데는 이유가 있었구나 싶으시다구요?</p>
+	</div>
+</section>
+<section>
+	<div class="row2"></div>
+		<h2 class="border">고객감사 서비스</h2>
+		<p class="col-c">5월까지 주문해주신 고객님들에 한해 다시 기억을 지울 수 있는 알약을 무료증정 해드립니다.<br>
+기억 음용 후 3일 내로 드시면 다시 머리가 깨끗해지실 수 있습니다.</p>
+		<div>
+		<img src="candy.jpg" class="candysize">
+	</div>
+
+
+</section>
+
+<section>
+<h2 class="border">감사한 목소리들</h2>
+<div class="thbg " >
+	<div class="row3" style="justify-content: center;">
+	<div class="rv">
+		<img src="rv1.png" class="rvsize zoom">
+	</div>
+	<div class="rv">
+		<img src="rv2.png" class="rvsize zoom">
+	</div>
+	<div class="rv">
+		<img src="rv3.png" class="rvsize zoom">
+	</div>
+	<div class="rv">
+		<img src="rv4.png" class="rvsize zoom">
+	</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+</section>
+<div style="margin-bottom: 60px;"> 
+<p style="color: grey; text-align: center; font-size: 12px;">기억이 없어지신 고객님들이 출금내역으로 사이버수사대에 신고하는 사고를<br>
+방지하기 위해 수납은 추적 불가능한 현금으로만 받으니 이 점 양해 부탁드립니다.</p>
+</div>
+<div class="row3" style="justify-content: center;">
+<img src="logo.png" style="width: 300px;">
+</div>
+<br>
+<br>
+<br>
+
+<hr class="solid">
+
+<section>
+<div class="row3" style="justify-content: center; margin-top: 40px;">
+	<div>
+	   <p class="col-f" style="width: 300px;">Copyright ©  2022 하준휘  </p>
+	</div>
+    <div>
+	   <p class="col-f" style="width: 300px;">hah4995@gmail.com</p>
+	</div>
+	<div>
+	    <p class="col-f" style="width: 300px;">고객센터 000-0000</p>
+	</div>
+</div>
+</section>
+
+
+</body>
+</html>
